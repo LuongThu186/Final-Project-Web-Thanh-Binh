@@ -213,9 +213,11 @@ span.psw {
 .header1 {
   text-align: center;
   margin: 30px 0 30px 0;
-  color: #2d982a;
+  background-color: #2D982A;
+  border-radius: 10px 10px 0 0;
+  color: white;
   font-size: 25px;
-  padding-top: 45px;  
+  padding: 20px 0;  
 }
 
 .mk_form {
@@ -223,6 +225,7 @@ span.psw {
   width: 560px;
   height: 360px;
   margin-left: 150px;
+  border-radius: 10px;
   background-color: white;
 }
 
@@ -255,7 +258,7 @@ span.psw {
 .close {
  /* Position it in the top right corner outside of the modal */
  position: absolute;
- right: 1265px;
+ right: 1310px;
  top: 110px;
  color: #000;
  font-size: 35px;
