@@ -1,0 +1,286 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+/* Body page*/
+.content {
+  display: flex;
+  margin-top: 20px;
+}
+
+.logo {
+  margin-left: 250px;
+  margin-top: 70px;
+}
+
+h2 {
+  margin-left: 120px;
+  font-size: 40px;
+}
+/* Bordered login form */
+.login_form {
+  border-bottom: 3px solid #d9d9d9;
+  width: 760px;
+  height: 500px;
+  margin-left: 150px;
+  background-color: white;
+}
+
+/* Bordered register form*/
+.register_form {
+  border-bottom: 3px solid #d9d9d9;
+  width: 760px;
+  height: 650px;
+  margin-left: 150px;
+  background-color: white;
+}
+
+/* Add star icon at the end input cell*/
+.star {
+  position: relative;
+  right: 8px;
+  top: 23px;
+  color: red;
+  font-size: 20px;
+}
+
+.star1 {
+  position: relative;
+  right: 8px;
+  top: 23px;
+  color: white;
+  font-size: 20px;
+}
+
+.star2{
+  color: red;
+}
+
+/* Set icon*/
+.icon {
+  width: 60px;
+  float: left;
+  height: 50px;
+}
+
+/* Format input cell*/
+.content_item {
+  display: flex;
+  padding: 0 60px;
+}
+
+.content_mk--item{
+  margin: 0 170px;
+  width: 70%;
+}
+
+/* Description for login*/
+.description {
+  margin-left: 150px;
+  margin-top: 80px;
+  font-size: 20px;
+  text-align: center;
+  width: 300px;
+  font-style: italic;
+}
+
+/* Full-width inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid;
+  box-sizing: border-box;
+}
+
+.quenmk_nhap {
+  margin-left: 130px;
+}
+
+/* Set a style for login buttons */
+.login_button {
+  background-color: #2d982a;
+  color: white;
+  border-radius: 50px;
+  padding: 14px 20px;
+  margin: 8px 0px;
+  margin-left: 105px;
+  margin-top: 60px;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Set a style for register buttons */
+.register_button {
+  background-color: #2d982a;
+  color: white;
+  border-radius: 50px;
+  padding: 14px 20px;
+  margin: 58px 0px;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center header inside this container */
+.header {
+  text-align: center;
+  margin: 30px 0 30px 0;
+  color: #2d982a;
+  font-size: 32px;
+  padding-top: 45px;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+}
+
+/* Verify password */
+.input-code {
+  max-width: 240px;
+  display: flex;
+  margin: auto;
+}
+
+.input-code_item {
+  margin: 0 5px;
+  text-align: center;
+  font-size: 30px;
+  border: solid 1px #ccc;
+  box-shadow: 0 0 5px #ccc inset;
+  outline: none;
+  width: 20%;
+  transition: all 0.2s ease-in-out;
+  border-radius: 3px;
+}
+
+/* Format popup*/
+.logo1{
+  margin-left: 120px;
+  margin-top: 70px;
+  width: 80px;
+}
+
+.xinchao{
+  font-size: 22px;
+}
+
+.header1 {
+  text-align: center;
+  margin: 30px 0 30px 0;
+  color: #2d982a;
+  font-size: 25px;
+  padding-top: 45px;  
+}
+
+.mk_form {
+  border-bottom: 3px solid #d9d9d9;
+  width: 560px;
+  height: 360px;
+  margin-left: 150px;
+  background-color: white;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  margin: auto;
+  padding: 50px 460px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5px auto; /* 15% from the top and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  
+}
+
+/* The Close Button */
+.close {
+ /* Position it in the top right corner outside of the modal */
+ position: absolute;
+ right: 1265px;
+ top: 110px;
+ color: #000;
+ font-size: 35px;
+ font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+  color:#A7A7A7;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
