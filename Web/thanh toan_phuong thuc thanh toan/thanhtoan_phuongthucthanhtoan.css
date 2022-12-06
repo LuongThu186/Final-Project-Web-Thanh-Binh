@@ -9,6 +9,7 @@ html, body{
     flex-direction: column;
     max-width: 85%;
     margin: 0px auto;
+    margin-top: 170px;
 }
 .section ol{
     list-style: none;
@@ -125,24 +126,27 @@ select{
 .choose--address{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 0px 10px;
 }
-select{
-    border: none;
-    min-width: 120px;
-    height: 25px;
-    margin: 10px 20px;
+.choose--address p{
+    font-weight: bold;
+}
+.choose--address input{
+    background-color: #C2F4C0;
+    border-radius: 15px;
+    width: 120px;
+    cursor: pointer;
 }
 .address{
     background-color: none;
-    margin: 10px auto;
+    margin: 10px;
     padding: 10px 20px;
     border: 1px solid;
     border-radius: 10px;
     display: flex;
     align-items: center;
-    width: 70%;
+    
 }
 input#address{
     margin: 0px 15px;
@@ -159,9 +163,15 @@ span{
     font-style: italic;
     font-weight: 100;
 }
-
-
-
+.address__contact p{
+    font-weight: bold;
+}
+.address>p{
+    font-weight: bold;
+    width: 120px;
+    position: relative;
+    top: -30px;
+}
 
 
 .ship--method{
@@ -237,3 +247,15 @@ span{
     height: 13px;
 }
 
+.content__payment--bank{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.content__payment--bank img{
+    width: 35%;
+    height: 140px;
+    margin: 15px;
+    cursor: pointer;
+    border: 1px solid;
+}

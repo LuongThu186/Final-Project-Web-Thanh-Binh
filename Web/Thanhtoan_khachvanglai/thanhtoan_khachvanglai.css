@@ -9,6 +9,7 @@ html, body{
     flex-direction: column;
     max-width: 85%;
     margin: 0px auto;
+    margin-top: 170px;
 }
 .section ol{
     list-style: none;

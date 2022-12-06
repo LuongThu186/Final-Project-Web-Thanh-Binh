@@ -5,10 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thanh toán</title>
-    <link rel="stylesheet" href="./thanhToan_KVL.css">
+    <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <script src="../js/getHeaderFooter.js" defer></script>
+
+    <link rel="stylesheet" href="../style/thanhToan_TV.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 </head>
 <body>
+    <header></header>
     <div class="container">
         <div class="section">
             <ol>
@@ -32,7 +37,7 @@
                         <p>Số lượng</p>
                     </div>
                     <div class="content__order--item">
-                        <img src="/assets/images/thanhToan_KVL/nat C.png" class="item--img">
+                        <img src="/assets/images/thanhToan_TV/nat C.png" class="item--img">
                         <p class="item--name">Nat C 1000 hỗ trợ tăng đề kháng lọ 60 viên</p>
                         <p class="item--price">105.000đ</p>
                         <p class="item--amount">1</p>
@@ -69,31 +74,37 @@
                             </label>
                         </div>
                     </div>
-                    <div class="form__row">
-                        <label class="form__label" for="username">Tên người nhận:</label>
-                        <input type="text" name="username"  class="form__input" placeholder="Tên người nhận"/>
-                        <label class="form__label" for="phone">Số điện thoại người nhận:</label>
-                        <input type="text" name="phone"  class="form__input" placeholder="0000-000-000"/>
+                    <div class="choose--address">
+                        <p class="choose--address--no">Chọn địa chỉ nhận hàng</p>
+                        <input type="button" id="add--address" value="Thêm địa chỉ">
                     </div>
-                    <div class="form__row">
-                        <label class="form__label" for="address">Địa chỉ:</label>
-                        <div class="address__input"> 
-                            <div>
-                                <select name="city" id="city">
-                                    <option value="0" selected>Hồ Chí Minh</option>
-                                    <option value="0">Hà Nội</option>
-                                    <option value="0">Đà Nẵng</option>
-                                </select>
-                                <select name="district" id="district">
-                                    <option value="0" selected>Quận 12</option>
-                                    <option value="0">Quận 1</option>
-                                    <option value="0">Quận 2</option>
-                                </select>
+                    <div class="address">
+                        <div>
+                            <input type="radio" id="address" name="address" checked>
+                        </div>
+                        <div>
+                            <div class="address__contact">
+                                <p>Nguyễn Văn A | 0332583403 <span>(mặc định)</span></p>
                             </div>
-                            <div class="address__no">
-                                <input type="text" name="address" id="address" class="form__input" placeholder="Số nhà/tòa cụ thể..."/>
+                            <div class="address__infor">
+                                <p>Số 669, QL1, Khu phố 3, Phường Linh Xuân, Quận Thủ Đức, Thành phố Hồ Chí Minh</p>
                             </div>
                         </div>
+                        <p>Chỉnh sửa</p>
+                    </div>
+                    <div class="address">
+                        <div>
+                            <input type="radio" id="address" name="address" >
+                        </div>
+                        <div>
+                            <div class="address__contact">
+                                <p>Nguyễn Văn A | 0332583403</p>
+                            </div>
+                            <div class="address__infor">
+                                <p>Kí túc xá khu B, Khu phố Tân Hòa, Phường Đông Hòa, Thành phố Dĩ An, tỉnh Bình Dương</p>
+                            </div>
+                        </div>
+                        <p>Chỉnh sửa</p>
                     </div>
                 </div>
                 <div class="content__payment">
@@ -149,5 +160,6 @@
             </div>
         </div>
     </div>
+    <footer></footer>
 </body>
 </html>

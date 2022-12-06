@@ -5,10 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thanh toán</title>
-    <link rel="stylesheet" href="./thanhToan_Nhantaicuahang.css">
+    <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <script src="../js/getHeaderFooter.js" defer></script>
+
+    <link rel="stylesheet" href="../style/thanhToan_KVL.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 </head>
 <body>
+    <header></header>
     <div class="container">
         <div class="section">
             <ol>
@@ -32,7 +37,7 @@
                         <p>Số lượng</p>
                     </div>
                     <div class="content__order--item">
-                        <img src="/assets/images/thanhToan_TV/nat C.png" class="item--img">
+                        <img src="/assets/images/thanhToan_KVL/nat C.png" class="item--img">
                         <p class="item--name">Nat C 1000 hỗ trợ tăng đề kháng lọ 60 viên</p>
                         <p class="item--price">105.000đ</p>
                         <p class="item--amount">1</p>
@@ -57,66 +62,41 @@
                     <h3>Hình thức giao hàng</h3>
                     <div class="ship--method">
                         <div>
-                            <input type="radio" id="reveive__home" name="receive" >
+                            <input type="radio" id="reveive__home" name="receive" checked>
                             <label for="reveive__home">
                                 Giao hàng tận nơi
                             </label>
                         </div>
                         <div>
-                            <input type="radio" id="receive__shop" name="receive" checked>
+                            <input type="radio" id="receive__shop" name="receive" >
                             <label for="receive__shop">
                                 Nhận tại nhà thuốc
                             </label>
                         </div>
                     </div>
-                    <div class="choose--address">
-                            <select name="city" id="city">
-                                <option value="0" selected>Hồ Chí Minh</option>
-                                <option value="0">Hà Nội</option>
-                                <option value="0">Đà Nẵng</option>
-                            </select>
-                            <select name="district" id="district">
-                                <option value="0" selected>Quận 12</option>
-                                <option value="0">Quận 1</option>
-                                <option value="0">Quận 2</option>
-                            </select>
+                    <div class="form__row">
+                        <label class="form__label" for="username">Tên người nhận:</label>
+                        <input type="text" name="username"  class="form__input" placeholder="Tên người nhận"/>
+                        <label class="form__label" for="phone">Số điện thoại người nhận:</label>
+                        <input type="text" name="phone"  class="form__input" placeholder="0000-000-000"/>
                     </div>
-                    <div class="address">
-                        <div>
-                            <input type="radio" id="address" name="address" >
-                        </div>
-                        <div>
-                            <div class="address__contact">
-                                <p>Nhà thuốc Thanh Bình 1</p>
+                    <div class="form__row">
+                        <label class="form__label" for="address">Địa chỉ:</label>
+                        <div class="address__input"> 
+                            <div>
+                                <select name="city" id="city">
+                                    <option value="0" selected>Hồ Chí Minh</option>
+                                    <option value="0">Hà Nội</option>
+                                    <option value="0">Đà Nẵng</option>
+                                </select>
+                                <select name="district" id="district">
+                                    <option value="0" selected>Quận 12</option>
+                                    <option value="0">Quận 1</option>
+                                    <option value="0">Quận 2</option>
+                                </select>
                             </div>
-                            <div class="address__infor">
-                                <p>Số X đường Y, quận 10, Hồ Chí Minh</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="address">
-                        <div>
-                            <input type="radio" id="address" name="address" >
-                        </div>
-                        <div>
-                            <div class="address__contact">
-                                <p>Nhà thuốc Thanh Bình 5</p>
-                            </div>
-                            <div class="address__infor">
-                                <p>Số M đường N, quận 10, Hồ Chí Minh</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="address">
-                        <div>
-                            <input type="radio" id="address" name="address" >
-                        </div>
-                        <div>
-                            <div class="address__contact">
-                                <p>Nhà thuốc Thanh Bình 10</p>
-                            </div>
-                            <div class="address__infor">
-                                <p>Số U đường I, quận 10, Hồ Chí Minh</p>
+                            <div class="address__no">
+                                <input type="text" name="address" id="address" class="form__input" placeholder="Số nhà/tòa cụ thể..."/>
                             </div>
                         </div>
                     </div>
@@ -174,5 +154,6 @@
             </div>
         </div>
     </div>
+    <footer></footer>
 </body>
 </html>
