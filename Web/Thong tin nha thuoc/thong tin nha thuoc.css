@@ -78,16 +78,33 @@ h3{
 }
 
 .sub-header{
-    font-size: 27px;
+    font-size: 23px;
     font-weight: bold;
 }
 
 .content--item{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 li{
-    font-size: 20px;
+    font-size: 18px;
     padding-bottom: 10px;
 }
+/* Format table*/
+table{
+    border-collapse: collapse;
+    border: 2px solid #91D88E;
+    border-radius: 10px 10px 0 0;
+
+}
+
+th{
+    border: 1px solid #91D88E;
+}
+
+
+.sub-title{
+    border-radius: 10px 10px 0 0;
+}
+
 
