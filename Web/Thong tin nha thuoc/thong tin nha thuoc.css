@@ -116,6 +116,7 @@ a{
 .container_1{
     display: flex;
     flex-wrap: wrap;
+    margin-left: 15px;
 }
 
 .list--name{
@@ -124,4 +125,9 @@ a{
     border-radius: 10px;
     text-align: center;
     margin: 35px 35px;
+}
+
+.ava{
+    width: 165px;
+    padding-top: 25px;
 }
