@@ -27,7 +27,7 @@ h3{
     border-radius: 10px;
     padding: 16px 20px;
     margin-left: -35px;
-    width: 90%;
+    width: 100%;
 }
 .section ol{
     list-style: none;
@@ -62,7 +62,7 @@ h3{
     background-color: #C2F4C0;
     border-radius: 10px;
     padding: 15px;
-    flex: 15%;
+    flex: 16%;
     border-bottom: 3px solid #bbbbbb;
     border-right: 3px solid #ecebeb;
     max-height: 780px;
@@ -70,9 +70,24 @@ h3{
 
 .content-posts{
     flex: 70%;
-    margin: 10px 5px 0px;
+    margin: 10px 25px 0px;
     border-radius: 10px;
     padding: 10px;
     height: fit-content;
+    height: 2000px;
+}
+
+.sub-header{
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.content--item{
+    font-size: 20px;
+}
+
+li{
+    font-size: 20px;
+    padding-bottom: 10px;
 }
 
