@@ -93,13 +93,13 @@ li{
 /* Format table*/
 table{
     border-collapse: collapse;
-    border: 2px solid #91D88E;
-    border-radius: 10px 10px 0 0;
+    border: 2px solid #AEE2AD;
+    border-radius: 10px ;
 
 }
 
 th{
-    border: 1px solid #91D88E;
+    border: 1px solid #2D982A;
 }
 
 
