@@ -65,6 +65,7 @@ h3{
     flex: 15%;
     border-bottom: 3px solid #bbbbbb;
     border-right: 3px solid #ecebeb;
+    max-height: 780px;
 }
 
 .content-posts{
