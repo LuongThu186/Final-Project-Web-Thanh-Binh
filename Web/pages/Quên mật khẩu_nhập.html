@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quên mật khẩu</title>
+    <link rel="stylesheet" href="../style/Login.css" />
+    <script>
+      function getPhoneNumber() {
+        var params = new URLSearchParams(window.location.search);
+        return params;
+      }
+
+      var phone = "<b>" + getPhoneNumber().get("phoneNumber") + "<b>";
+    </script>
+  </head>
+  <body>
+    <div class="content">
+      <div class="left-content">
+        <img src="/assets/images/đang nhap/LogoIcon.png" width="130px" class="logo" />
+        <h2 style="color: #2d982a">Thanh Bình xin chào!</h2>
+        <p class="description">
+          Đăng ký Thành viên ngay để nhận nhiều ưu đãi từ Thanh Bình
+        </p>
+      </div>
+
+      <div class="right-content">
+        <form class="login_form">
+          <h2 class="header">Quên mật khẩu</h2>
+          <p align="center" style="font-size: 20px">Nhập số điện thoại</p>
+          <div class="container">
+            <div class="quenmk_nhap">
+              <input type="text" name="phoneNumber" id="phoneNumber" required />
+              <span class="star1">*</span>
+            </div>
+
+            <div align="center">
+              <button
+                type="submit"
+                class="register_button"
+                onclick="document.getElementById('id01').style.display='block'"
+              >
+                Tiếp tục
+              </button>
+            </div>
+          </div>
+
+          <div align="center">
+            <p style="font-size: 14px">Đã có tài khoản?</p>
+            <span class="dki" style="font-weight: bold"
+              ><a href="./Đăng nhập.html" style="color: #2d982a"
+                >Đăng nhập ngay</a
+              ></span
+            >
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="id01" class="modal">
+      <!-- Modal Content -->
+      <div class="content">
+        <div class="modal_content">
+          <form action="./Mật khẩu mới.html" method="get" class="mk_form">
+            <span
+              onclick="document.getElementById('id01').style.display='none'"
+              class="close"
+              title="Close"
+              >&times;</span
+            >
+            <div>
+              <h2 class="header1">Quên mật khẩu</h2>
+              <p align="center" style="font-size: 16px;">Nhập 4 chữ số mà Thanh Bình đã gửi qua số điện thoại <span id="phonenumber"></span></p> 
+          </div>
+          <script>document.getElementById("phonenumber").innerHTML=phone;
+        </script>
+
+            <div class="container">
+              <div class="input-code">
+                <input
+                  type="text"
+                  maxlength="1"
+                  size="1"
+                  min="0"
+                  max="9"
+                  pattern="[0-9]{1}"
+                  class="input-code_item"
+                />
+                <input
+                  type="text"
+                  maxlength="1"
+                  size="1"
+                  min="0"
+                  max="9"
+                  pattern="[0-9]{1}"
+                  class="input-code_item"
+                /><input
+                  type="text"
+                  maxlength="1"
+                  size="1"
+                  min="0"
+                  max="9"
+                  pattern="[0-9]{1}"
+                  class="input-code_item"
+                /><input
+                  type="text"
+                  maxlength="1"
+                  size="1"
+                  min="0"
+                  max="9"
+                  pattern="[0-9]{1}"
+                  class="input-code_item"
+                />
+              </div>
+            
+                <div align="center">
+                  <button type="submit" class="register_button">
+                    Xác nhận
+                  </button>
+                </div>
+            
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
