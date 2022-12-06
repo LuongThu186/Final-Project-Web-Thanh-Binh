@@ -107,4 +107,21 @@ th{
     border-radius: 10px 10px 0 0;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
 
+/*Duoc si*/
+.container_1{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list--name{
+    background-color: #EBFFEA;
+    width: 450px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 35px 35px;
+}
