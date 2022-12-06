@@ -11,7 +11,6 @@ html, body{
     margin: 0px auto;
 }
 .section ol{
-    list-style: none;
     display: flex;
     color: #776F6F;
     padding: 10px;
@@ -168,7 +167,6 @@ span{
     display: flex;
     align-items: center;
     justify-content: center;
-}
 .ship--method div{
     display: flex;
     align-items: center;
