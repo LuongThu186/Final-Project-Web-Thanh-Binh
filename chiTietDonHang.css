@@ -1,0 +1,78 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 80%;
+    margin: 0px auto;
+    margin-top: 170px;
+}
+.container>h2{
+    text-align: center;
+    margin: 30px 30px 20px 30px;
+}
+
+.content{
+    background-color: #F4F4F4;
+}
+.content__infor>p{
+    font-weight: bold;
+    margin: 40px 0px;
+}
+.form__row{
+    display: flex;
+    margin: 15px 0px;
+    align-items: center;
+}
+.form__label{
+    margin: 5px 5px;
+    min-width: 250px;
+}
+
+.content__item{
+    border-bottom: 1px solid;
+}
+.content__item--title{
+    font-weight: bold;
+    display: flex;
+    margin: 0px 10px;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+    align-items: center;
+    padding-right: 20px;
+    background-color: #C2F4C0;
+}
+.content__item--title p:nth-child(1){ min-width: 55%; margin: 5px 0px;}
+.content__item--title p:nth-child(2){ min-width: 15%; margin: 5px 0px; text-align: center;}
+.content__item--title p:nth-child(3){ min-width: 15%; margin: 5px 0px; text-align: center;}
+
+
+.content__item--information{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    height: 100px;
+    align-items: center;
+    border-radius: 5px; 
+    padding: 0px 20px 20px;
+}
+.content__item--information .item--img{ min-width: 10%; height: inherit; margin: 5px 5px;}
+.content__item--information .item--name{ min-width: 35%; margin: 5px 5px;}
+.content__item--information .item--quycach{ min-width: 15%; margin: 5px 5px; text-align: center;}
+.content__item--information .item--amount{ min-width: 15%; margin: 5px 5px; text-align: center;}
+
+.content__price{
+    width: 300px;
+    position: relative;
+    margin-left: auto;
+    font-weight: bold;
+}
+.voucher__label, .deliveryfee__label, .total__label{
+    margin: 5px 5px;
+    min-width: 200px;
+}
+
