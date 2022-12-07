@@ -117,6 +117,8 @@ b{
     color: #2D982A;
 }
 
+.history, .cart{cursor: pointer;}
+
 .header__navbar{
     background-color: #2D982A;
     display: flex;
