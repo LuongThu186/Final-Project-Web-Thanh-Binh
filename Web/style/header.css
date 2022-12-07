@@ -114,7 +114,7 @@ b{
     border-radius: 20px 0px 0px 20px;
 }
 .bi-person-circle, .bi-file-earmark-text, .bi-cart-fill{
-    color: #2D982A;
+    color: #2D982A !important;
 }
 
 .history, .cart{cursor: pointer;}
